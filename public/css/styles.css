@@ -1,5 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+img {
+  width: 150px;
 }
 
 .bg-yellow {
@@ -8,4 +27,12 @@ body {
 
 .bg-light-grey {
   background-color: #ebebeb;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.ta-c {
+  text-align: center;
 }
