@@ -1,9 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -35,4 +30,38 @@ img {
 
 .ta-c {
   text-align: center;
+}
+
+.vw-90 {
+  width: 90vw;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.bt-1 {
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.border-grey {
+  border-color: #ebebeb;
+}
+
+/*tablet*/
+@media (min-width: 520px) {
+  .md-product-shadow {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  /* TODO: esconder descripcion */
+}
+
+/*desktop*/
+@media (min-width: 1280px) {
 }
