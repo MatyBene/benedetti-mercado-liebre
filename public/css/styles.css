@@ -61,6 +61,14 @@ img {
   margin: 20px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
 .bt-1 {
   border-top-style: solid;
   border-top-width: 1px;
@@ -90,6 +98,10 @@ img {
   font-size: 2em;
 }
 
+.w-50pr {
+  width: 50%;
+}
+
 .hamburguer-button {
   background-color: #03264c;
   color: #ffffff;
@@ -109,6 +121,9 @@ img {
 .d-flex {
   display: flex;
 }
+.fw-w {
+  flex-wrap: wrap;
+}
 
 .fd-column {
   flex-direction: column;
@@ -118,10 +133,17 @@ img {
   justify-content: space-around;
 }
 
+.jc-sb {
+  justify-content: space-between;
+}
+
 /*tablet*/
 @media (min-width: 520px) {
   .md-product-shadow {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .d-flex-520 {
+    display: flex;
   }
   .d-n {
     display: flex;
@@ -130,6 +152,13 @@ img {
   .hamburguer-button {
     display: none;
   }
+  .mr-5 {
+    margin-right: 5px;
+  }
+  .ml-5 {
+    margin-left: 5px;
+  }
+  .
 }
 
 /*desktop*/
