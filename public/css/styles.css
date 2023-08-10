@@ -28,6 +28,18 @@ img {
   background-color: white;
 }
 
+.c-blue {
+  color: #03264c;
+}
+
+.c-dark-grey {
+  color: #666;
+}
+
+.c-light-grey {
+  color: #ebebeb;
+}
+
 .ta-c {
   text-align: center;
 }
@@ -45,6 +57,10 @@ img {
   margin-bottom: 10px;
 }
 
+.m-20 {
+  margin: 20px;
+}
+
 .bt-1 {
   border-top-style: solid;
   border-top-width: 1px;
@@ -54,12 +70,66 @@ img {
   border-color: #ebebeb;
 }
 
+.fsz-24 {
+  font-size: 24px;
+}
+
+.fsz-18 {
+  font-size: 18px;
+}
+
+.fsz-16 {
+  font-size: 16px;
+}
+
+.fsz-12 {
+  font-size: 12px;
+}
+
+.fsz-2em {
+  font-size: 2em;
+}
+
+.hamburguer-button {
+  background-color: #03264c;
+  color: #ffffff;
+  display: block;
+  max-width: 50px;
+  padding: 10px 0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 25px;
+  margin: auto;
+}
+
+.d-n {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
 /*tablet*/
 @media (min-width: 520px) {
   .md-product-shadow {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
-  /* TODO: esconder descripcion */
+  .d-n {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hamburguer-button {
+    display: none;
+  }
 }
 
 /*desktop*/
