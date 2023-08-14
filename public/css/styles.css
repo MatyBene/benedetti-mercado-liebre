@@ -12,10 +12,27 @@ a {
   color: #666;
 }
 
-img {
-  width: 150px;
+/* Tamaño de la fuente */
+
+.fsz-24 {
+  font-size: 24px;
 }
 
+.fsz-18 {
+  font-size: 18px;
+}
+
+.fsz-16 {
+  font-size: 16px;
+}
+
+.fsz-12 {
+  font-size: 12px;
+}
+
+/* ------ */
+
+/* Header */
 .main-header {
   background-color: #eac926;
   padding: 20px;
@@ -59,6 +76,84 @@ img {
   padding: 5px 0;
   font-size: 17px;
 }
+
+/* ------ */
+
+/* Main */
+
+main {
+  background-color: #ebebeb;
+  margin: auto;
+  width: 90%;
+}
+.articles {
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+img {
+  width: 150px;
+}
+
+.product-details > .delivery-icon {
+  display: block;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.product-details {
+  position: relative;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+.delivery-icon {
+  color: #39b54a;
+}
+
+.price-detail {
+  display: flex;
+}
+
+.price {
+  width: 30%;
+  font-size: 18px;
+}
+
+.discount {
+  width: 70%;
+  font-size: 16px;
+  color: #39b54a;
+}
+
+/* ------ */
+
+/* Footer */
+
+.section-footer {
+  text-align: center;
+  margin: 40px;
+  padding-top: 20px;
+}
+
+.icono-footer {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.copy {
+  margin: 20px;
+}
+
+/* ------ */
 
 /*tablet*/
 @media (min-width: 520px) {
