@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
 }
 
 ul {
@@ -136,6 +137,10 @@ img {
 /* ------ */
 
 /* Footer */
+
+footer {
+  background-color: #fff;
+}
 
 .section-footer {
   text-align: center;
