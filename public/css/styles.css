@@ -31,8 +31,6 @@ a {
   font-size: 12px;
 }
 
-/* ------ */
-
 /* Header */
 .main-header {
   background-color: #eac926;
@@ -40,24 +38,41 @@ a {
 }
 
 .hamburguer-button {
-  background-color: #03264c;
+  background-color: #1259c3;
   color: #ffffff;
   display: block;
-  max-width: 50px;
-  padding: 15px 0;
+  max-width: 40px;
+  padding: 10px 0;
   border-radius: 8px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   margin: auto;
 }
 
+.main-header-top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .logo {
-  width: 200px;
+  width: 50%;
+}
+
+.search-bar {
+  width: 50%;
+  height: 40px;
+  align-self: center;
+  border-radius: 8px;
+  border: #fff;
 }
 
 .copy-header {
   font-weight: 400;
   text-align: center;
+  font-size: 14px;
+  margin: 20px 0;
+  width: 100%;
 }
 
 .main-navbar {
@@ -78,8 +93,6 @@ a {
   font-size: 17px;
 }
 
-/* ------ */
-
 .banner {
   width: 100%;
 }
@@ -91,13 +104,25 @@ main {
   margin: auto;
   width: 90%;
 }
+
+.last-visit {
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.ofert {
+  font-size: 24px;
+  margin: 15px 0;
+}
+
 .articles {
   background-color: #fff;
   margin-top: 10px;
 }
 
 img {
-  width: 150px;
+  width: 100%;
+  height: auto;
 }
 
 .product-details > .delivery-icon {
@@ -129,16 +154,21 @@ img {
 
 .price {
   width: 30%;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .discount {
   width: 70%;
   font-size: 16px;
   color: #39b54a;
+  margin-top: 8px;
 }
 
-/* ------ */
+.detail {
+  font-size: 16px;
+  color: #666;
+  padding-top: 15px;
+}
 
 /* Footer */
 
@@ -158,17 +188,13 @@ footer {
   margin-bottom: 10px;
 }
 
-.copy {
-  margin: 20px;
+.copy p {
+  padding: 20px;
 }
-
-/* ------ */
 
 /*tablet*/
 @media (min-width: 520px) {
-  .md-product-shadow {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
+  /* Header */
   .main-header-top-bar {
     display: flex;
     justify-content: space-between;
@@ -190,10 +216,25 @@ footer {
   .main-navbar li {
     margin: 0 5px;
   }
+  /* Main */
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .articles {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 46%;
+  }
+  .discount {
+    text-align: center;
+  }
 }
 
 /*desktop*/
 @media (min-width: 1280px) {
+  /* Header */
+
   .logo {
     width: 250px;
   }
@@ -219,5 +260,9 @@ footer {
   }
   .main-navbar a {
     font-size: 19px;
+  }
+  /* Main */
+  .articles {
+    width: 23%;
   }
 }
