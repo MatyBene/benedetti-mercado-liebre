@@ -28,12 +28,19 @@
     <header class="main-header">
       <div class="main-header-top-bar">
         <img src="/images/logo-mercado-liebre.svg" class="logo" />
-        <input
-          type="text"
-          name="bar"
-          class="search-bar"
-          placeholder="Buscar productos, marcas"
-        />
+        <div class="search">
+          <form action="/" class="search-form">
+            <input
+              type="text"
+              name="bar"
+              class="search-bar"
+              placeholder="Buscar productos, marcas"
+            />
+            <button type="submit" class="lens">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
         <h2 class="copy-header">
           <i class="fa-solid fa-hand-holding-dollar"></i>
           Comprá en cuotas y sin tarjeta de crédito
