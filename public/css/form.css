@@ -26,6 +26,10 @@ main {
   border: none;
 }
 
+.login button:hover {
+  background-color: #0022aa;
+}
+
 /* Register */
 .register {
   display: flex;

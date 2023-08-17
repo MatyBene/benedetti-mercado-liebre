@@ -278,6 +278,30 @@ footer {
   }
   /* Main */
   .articles {
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
     width: 23%;
+  }
+  .detail {
+    display: none;
+  }
+  .articles:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .articles:hover {
+    .detail {
+      display: block;
+    }
+  }
+  /* Footer */
+  footer {
+    margin-top: 15px;
+  }
+  .foot {
+    display: flex;
+    margin: auto;
+    width: 90%;
+  }
+  .icono-footer:hover {
+    color: #ebebeb;
   }
 }
