@@ -3,9 +3,9 @@ main {
   width: 90%;
 }
 
+/* Login */
 .login {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -24,6 +24,103 @@ main {
   height: 35px;
   border-radius: 5px;
   border: none;
+}
+
+/* Register */
+.register {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.register h3 {
+  padding: 10px 0;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-data input {
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 20px 0;
+}
+
+.date {
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 20px 0;
+}
+
+.user-profile {
+  display: flex;
+}
+
+.rad {
+  padding: 10px 50px 10px 0;
+}
+
+.rad label {
+  padding-right: 5px;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+}
+
+.check {
+  padding: 10px 50px 10px 0;
+}
+
+.check label {
+  padding-right: 5px;
+}
+
+.avatar {
+  background-color: #fff;
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 20px 0;
+}
+
+.pass {
+  display: flex;
+  flex-direction: column;
+}
+
+.pass input {
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 20px 0;
+}
+
+.register button {
+  color: #fff;
+  background-color: #1259c3;
+  margin-top: 20px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+}
+.error {
+  display: none;
+  color: red;
+}
+
+input:invalid + .error {
+  display: block;
 }
 
 /*tablet*/

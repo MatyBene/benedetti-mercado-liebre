@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/form.css" />
     <title>Document</title>
   </head>
   <body>
@@ -76,75 +77,149 @@
       </nav>
     </header>
     <main>
-      <form action="/">
-        <h4>Datos de usuario</h4>
-        <div>
-          <input type="text" name="name" placeholder="Nombre y apellido" />
-          <input type="text" name="nickname" placeholder="Nombre de usuario" />
+      <form action="/" class="register">
+        <h3>Datos de usuario</h3>
+        <div class="user-data">
+          <input
+            type="text"
+            name="username"
+            placeholder="Nombre y apellido"
+            minlength="2"
+          />
+          <span class="error">Por favor, ingresa un dato válido.</span>
+          <input
+            type="text"
+            name="nickname"
+            placeholder="Nombre de usuario"
+            minlength="4"
+          />
+          <span class="error"
+            >El nombre de usuario debe tener al menos 4 caracteres.</span
+          >
           <input type="email" name="email" placeholder="Correo electrónico" />
+          <span class="error"
+            >Por favor, ingresa un correo electrónico válido.</span
+          >
           <input type="text" name="address" placeholder="Domicilio" />
         </div>
-        <h4>Fecha de nacimiento</h4>
+        <h3>Fecha de nacimiento</h3>
         <div>
-          <input type="date" name="fecha" />
+          <input type="date" name="fecha" class="date" />
         </div>
-        <h4>Perfil de usuario</h4>
-        <div>
-          <label for="buyer">Comprador</label>
-          <input
-            type="radio"
-            name="user-profile"
-            value="comprador"
-            id="buyer"
-          />
-          <label for="seller">Vendedor</label>
-          <input
-            type="radio"
-            name="user-profile"
-            id="seller"
-            value="vendedor"
-          />
+        <h3>Perfil de usuario</h3>
+        <div class="user-profile">
+          <div class="rad">
+            <label for="buyer">Comprador</label>
+            <input
+              type="radio"
+              name="user-profile"
+              value="comprador"
+              id="buyer"
+            />
+          </div>
+          <div class="rad">
+            <label for="seller">Vendedor</label>
+            <input
+              type="radio"
+              name="user-profile"
+              id="seller"
+              value="vendedor"
+            />
+          </div>
         </div>
-        <h4>Intereses</h4>
-        <div>
-          <label for="electro">Electro</label>
-          <input
-            type="checkbox"
-            name="interests"
-            id="electro"
-            value="electro"
-          />
-          <label for="fashion">Moda</label>
-          <input type="checkbox" name="interests" id="fashion" value="moda" />
-          <label for="home">Hogar</label>
-          <input type="checkbox" name="interests" id="home" value="hogar" />
-          <label for="toy-store">Juguetería</label>
-          <input
-            type="checkbox"
-            name="interests"
-            id="toy-store"
-            value="juguetería"
-          />
-          <label for="health-life">Vida sana</label>
-          <input
-            type="checkbox"
-            name="interests"
-            id="health-life"
-            value="vida-sana"
-          />
+        <h3>Intereses</h3>
+        <div class="interest">
+          <div class="check">
+            <label for="electro">Electro</label>
+            <input
+              type="checkbox"
+              name="interests"
+              id="electro"
+              value="electro"
+            />
+          </div>
+          <div class="check">
+            <label for="fashion">Moda</label>
+            <input type="checkbox" name="interests" id="fashion" value="moda" />
+          </div>
+          <div class="check">
+            <label for="home">Hogar</label>
+            <input type="checkbox" name="interests" id="home" value="hogar" />
+          </div>
+          <div class="check">
+            <label for="toy-store">Juguetería</label>
+            <input
+              type="checkbox"
+              name="interests"
+              id="toy-store"
+              value="juguetería"
+            />
+          </div>
+          <div class="check">
+            <label for="health-life">Vida sana</label>
+            <input
+              type="checkbox"
+              name="interests"
+              id="health-life"
+              value="vida-sana"
+            />
+          </div>
         </div>
-        <h4>Imagen de usuario</h4>
+        <h3>Imagen de usuario</h3>
         <div>
-          <input type="file" name="avatar" />
+          <input type="file" name="avatar" class="avatar" />
         </div>
-        <h4>Contraseña</h4>
-        <div>
-          <input type="password" name="key" placeholder="Contraseña" />
-          <input type="password" name="key" placeholder="Confimar Contraseña" />
+        <h3>Contraseña</h3>
+        <div class="pass">
+          <input
+            type="password"
+            name="key"
+            placeholder="Contraseña"
+            minlength="8"
+          />
+          <span class="error"
+            >La contraseña debe tener al menos 8 caracteres.</span
+          >
+          <input
+            type="password"
+            name="confirm-key"
+            placeholder="Confimar Contraseña"
+            pattern=".{8,}"
+          />
+          <span class="error">Las contraseñas no coinciden</span>
         </div>
         <button type="submit">Enviar</button>
         <button type="reset">Borrar datos</button>
       </form>
     </main>
+    <footer>
+      <div class="section-footer">
+        <i class="fa-solid fa-credit-card icono-footer"></i>
+        <h4>Pagá con tarjeta o en efectivo</h4>
+        <p class="fsz-12">
+          Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+          efectivo en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </div>
+      <div class="section-footer">
+        <i class="fa-solid fa-gift icono-footer"></i>
+        <h4>Envío gratis desde $ 2.500</h4>
+        <p class="fsz-12">
+          Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+          miles de productos. Es un beneficio de Mercado Puntos.
+        </p>
+      </div>
+      <div class="section-footer">
+        <i class="fa-solid fa-user-shield icono-footer"></i>
+        <h4>Seguridad, de principio a fin</h4>
+        <p class="fsz-12">
+          ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+          hacer, porque estás siempre protegid@.
+        </p>
+      </div>
+      <div class="copy">
+        <p class="fsz-12">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+      </div>
+    </footer>
   </body>
 </html>
