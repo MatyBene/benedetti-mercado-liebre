@@ -147,6 +147,7 @@ img {
 
 .delivery-icon {
   color: #39b54a;
+  transition: transform 0.3s ease;
 }
 
 .price-detail {
@@ -291,6 +292,9 @@ footer {
     .detail {
       display: block;
     }
+  }
+  .delivery-icon:hover {
+    transform: rotate(-90deg);
   }
   /* Footer */
   footer {
