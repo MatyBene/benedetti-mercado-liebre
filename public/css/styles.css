@@ -13,24 +13,6 @@ a {
   color: #666;
 }
 
-/* Tamaño de la fuente */
-
-.fsz-24 {
-  font-size: 24px;
-}
-
-.fsz-18 {
-  font-size: 18px;
-}
-
-.fsz-16 {
-  font-size: 16px;
-}
-
-.fsz-12 {
-  font-size: 12px;
-}
-
 /* Header */
 .main-header {
   background-color: #eac926;
@@ -197,8 +179,8 @@ footer {
 
 .section-footer {
   text-align: center;
-  margin: 40px;
-  padding-top: 20px;
+  margin: 20px;
+  padding-top: 40px;
 }
 
 .icono-footer {
@@ -209,6 +191,10 @@ footer {
 
 .copy p {
   padding: 20px;
+}
+
+.fsz-12 {
+  font-size: 12px;
 }
 
 /*tablet*/

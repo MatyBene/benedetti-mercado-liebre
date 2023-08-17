@@ -1,0 +1,41 @@
+main {
+  margin: auto;
+  width: 90%;
+}
+
+.login {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.login input {
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 20px 0;
+}
+
+.login button {
+  color: #fff;
+  background-color: #1259c3;
+  margin-top: 20px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+}
+
+/*tablet*/
+@media (min-width: 520px) {
+  main {
+    width: 75%;
+  }
+}
+
+/*desktop*/
+@media (min-width: 1280px) {
+  main {
+    width: 60%;
+  }
+}
